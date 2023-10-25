@@ -7,6 +7,7 @@ class Banco{
 
         Poupanca p1 = new Poupanca("123-4",100.0,david,vencimento,0.01);
 
+        System.out.println();
         p1.extract();
         
     }
