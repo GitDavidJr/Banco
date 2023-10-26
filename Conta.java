@@ -1,10 +1,10 @@
 class Conta{
 
-    protected String number;
+    protected int number;
     protected Double balance;
     protected Cliente holder;
 
-    public Conta(String number, Double balance, Cliente holder){
+    public Conta(int number, Double balance, Cliente holder){
         this.number = number;
         this.balance = balance;
         this.holder = holder;
@@ -20,6 +20,9 @@ class Conta{
         } else {
             System.out.println("Saldo insuficiente");
         }
+    }
+
+    public void viradaM(){
     }
 
     public void extract(){

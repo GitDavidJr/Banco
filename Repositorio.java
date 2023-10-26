@@ -22,9 +22,20 @@ public class Repositorio {
         }
     }
 
+    public void nextMes(){
+        for(int i = 0; i < indice; i++){
+            contas[i].viradaM();
+        }
+    }
+
     public void relatorio(){
         for(int i = 0; i < indice; i++){
+            System.out.println();
+            System.out.println("--------------------------------------");
             contas[i].extract();
+            System.out.println("Registro: " + (i + 1));
+            System.out.println();
+            System.out.println("--------------------------------------");
             System.out.println();
         }
     }
