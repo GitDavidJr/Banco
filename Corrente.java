@@ -21,7 +21,7 @@ public class Corrente extends Conta {
         limite = v;
     }
 
-    public void debitarC(Double v){
+    public void debitC(Double v){
         if((v <= (limite - valorG)) && (balance >= 0)){
             valorG += v;
         } else {

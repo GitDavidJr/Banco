@@ -18,6 +18,7 @@ public class Repositorio {
             if(c == contas[i]){
                 contas[i] = contas[indice - 1];
                 contas[indice - 1] = null; 
+                indice--;
             }
         }
     }
@@ -29,14 +30,19 @@ public class Repositorio {
     }
 
     public void relatorio(){
+
+        if(indice != 0){
         for(int i = 0; i < indice; i++){
             System.out.println();
             System.out.println("--------------------------------------");
             contas[i].extract();
             System.out.println("Registro: " + (i + 1));
-            System.out.println();
             System.out.println("--------------------------------------");
             System.out.println();
         }
+    } else{
+        System.out.println();
+        System.out.println("!Nenhuma conta registrada!");
     }
+}
 }
